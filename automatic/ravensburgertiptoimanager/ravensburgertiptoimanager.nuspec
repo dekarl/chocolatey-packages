@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ravensburgertiptoimanager</id>
+    <title>Ravensburger tiptoi Manager</title>
+    <version>3.0.8</version>
+    <authors>Ravensburger AG</authors>
+    <owners>Peter Jahn</owners>
+    <summary>Ravensburger tiptoi</summary>
+    <description>With the free tiptoi® Manager, you can download for each product the associated audio files. Start the download for your Mac or PC, select from the products and in a few steps the tiptoi® pen is ready for the new game, the new book, the new puzzle or the globe.</description>
+    <projectUrl>https://www.tiptoi.com/de/tiptoi-manager/index.html</projectUrl>
+    <tags>play usb pen children learning</tags>
+    <copyright>Copyright 2015 Ravensburger Spieleverlag GmbH</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/pjahn/nugetpackages/master/ravensburgertiptoimanager/ravensburgertiptoimanager.png</iconUrl>
+  </metadata>
+</package>
