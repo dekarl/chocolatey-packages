@@ -1,16 +1,18 @@
-﻿$packageName = 'ravensburgertiptoimanager' 
-$fileType = 'exe'
-$url = 'http://static.tiptoi.com/software/windows/install.exe' 
-$url64 = $url 
-$silentArgs = '-q' 
-$validExitCodes = @(0) 
+﻿$url = 'http://static.tiptoi.com/software/windows/install.exe'
+$etag = 'generate etag'
+$checksum = 'generate checksum'
 
-try {
-
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url
-
-    Write-ChocolateySuccess "$packageName"
-} catch {
-    Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
-    throw
+$packageArgs = @{
+    packageName = 'ravensburgertiptoimanager'
+    fileType = 'exe'
+    url = $url
+    checksum = $checksum
+    checksumType = 'sha256'
+#    url64 = $url
+#    checksum64 = $checksum
+#    checksumType64 = 'sha256'
+    silentArgs = '-q'
+    validExitCodes = @(0)
 }
+
+Install-ChocolateyPackage @packageArgs
