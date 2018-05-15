@@ -1,6 +1,6 @@
 # AU template: https://github.com/majkinetor/au-packages-template
 
-version: '$(build)'
+version: '{build}'
 max_jobs: 1
 image: WMF 5
 # History plugin requires complete log
